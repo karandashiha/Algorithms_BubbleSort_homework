@@ -16,13 +16,15 @@ public class Main {
             }
         }
         System.out.println("The price of a product:");
-        for (double price_sort : price)
-            System.out.print(price_sort + " ");
+        for (double priceSort : price)
+            System.out.print(priceSort + " ");
 
         //Розрахунок середньої ціни за весь період.
         double sum = 0;
         for (double num : price)
             sum += num;
+        // difference - (Також реалізуйте функціонал, який розраховує середню ціну
+        //за весь період.)
         double difference = sum/price.length;
             System.out.printf("%n%nThe average price of the product:%n%.2f",difference);
 
